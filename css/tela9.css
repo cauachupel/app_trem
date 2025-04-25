@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f0fa;
+    font: 1rem Arial, sans-serif;
+    background: #e6f0fa;
     color: #333;
     padding: 1rem;
     min-height: 100vh;
@@ -16,8 +16,8 @@ body {
 }
 
 header {
-    background-color: #8b0000;
-    color: white;
+    background: #8b0000;
+    color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -47,7 +47,7 @@ header p {
 main {
     max-width: 480px;
     margin: 1rem auto 2rem;
-    background-color: #fff;
+    background: #fff;
     padding: 1.5rem 2rem;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
@@ -87,7 +87,7 @@ h2 {
 }
 
 .route-card {
-    background-color: #f8d7da;
+    background: #f8d7da;
     border: 2px solid #b22222;
     border-radius: 12px;
     padding: 1rem 1.25rem;
@@ -113,16 +113,16 @@ h2 {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: bold;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .status.active {
-    background-color: #b22222;
+    background: #b22222;
 }
 
 .status.delayed {
-    background-color: #7f0000;
+    background: #7f0000;
 }
 
 form label {
@@ -139,8 +139,7 @@ form textarea {
     margin-bottom: 1.25rem;
     border: 2px solid #b22222;
     border-radius: 8px;
-    font-size: 1rem;
-    font-family: inherit;
+    font: 1rem inherit;
     resize: vertical;
     transition: border-color 0.3s ease;
 }
@@ -152,8 +151,8 @@ form textarea:focus {
 }
 
 form button {
-    background-color: #b22222;
-    color: white;
+    background: #b22222;
+    color: #fff;
     border: none;
     padding: 0.85rem 1.5rem;
     font-size: 1.1rem;
@@ -167,7 +166,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #7f0000;
+    background: #7f0000;
     box-shadow: 0 0 8px #7f0000;
 }
 
@@ -175,9 +174,8 @@ form button:hover {
     width: 20px;
     height: 20px;
 }
-
 #notifications-list p {
-    background-color: #f8d7da;
+    background: #f8d7da;
     border: 2px solid #f5c6cb;
     padding: 0.75rem 1rem;
     border-radius: 8px;
@@ -186,7 +184,6 @@ form button:hover {
     align-items: center;
     gap: 0.5rem;
 }
-
 .notification-icon {
     width: 24px;
     height: 24px;

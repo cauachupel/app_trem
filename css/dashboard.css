@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -163,42 +164,12 @@ section h2 {
     flex-shrink: 0;
 }
 
-
-.rodape {
-    background-color: rgb(41, 41, 41);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    color: rgb(255, 255, 255);
-}
-
-.rodape button {
-    background-color: rgb(41, 41, 41);
-    border: none;
-    cursor: pointer;
-}
-
-.rodape img {
-    max-width: 30px;
-    cursor: pointer;
-}
-
-img {
-    margin-left: 0;
-    margin-right: 0;
-    justify-content: center;
-}
-
-footer.rodape {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
+.dashboard-footer {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 1rem;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    font-style: italic;
 }

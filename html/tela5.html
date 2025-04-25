@@ -3,25 +3,159 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Início - Gerenciamento de Trem</title>
-    <link rel="stylesheet" href="../css/tela5.css" />
+    <title>Dashboard Geral - SSTREM</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
 </head>
 <body>
-    <div class="app-container">
-        <header class="app-header">
-            <img src="../img/pngtree-train-icon-png-image_4316587-removebg-preview.png" alt="Logo Trem" class="app-logo" />
-            <h1>SSTREM</h1>
-            <p>Gerenciamento de Trem</p>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <img src="../img/pngtree-train-icon-png-image_4316587-removebg-preview.png" alt="Logo Trem" class="dashboard-logo" />
+            <h1>SSTREM Dashboard</h1>
         </header>
-        <main class="app-main">
-            <button class="app-button">Horarios</button>
-            <button class="app-button">Status trens</button>
-            <button class="app-button">Avisos e alertas</button>
-          
+        <main class="dashboard-main">
+            <section class="status-section">
+                <h2>Status dos Trens</h2>
+            <div class="status-cards">
+                <div class="status-card active">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 1" class="train-icon" />
+                    <div>
+                        <h3>Trem 1</h3>
+                        <p>Status: <span class="status-text">Ativo</span></p>
+                        <p>Última atualização: 2 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card delayed">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 2" class="train-icon" />
+                    <div>
+                        <h3>Trem 2</h3>
+                        <p>Status: <span class="status-text">Atrasado</span></p>
+                        <p>Última atualização: 5 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card active">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 3" class="train-icon" />
+                    <div>
+                        <h3>Trem 3</h3>
+                        <p>Status: <span class="status-text">Ativo</span></p>
+                        <p>Última atualização: 1 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card delayed">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 4" class="train-icon" />
+                    <div>
+                        <h3>Trem 4</h3>
+                        <p>Status: <span class="status-text">Atrasado</span></p>
+                        <p>Última atualização: 3 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card active">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 5" class="train-icon" />
+                    <div>
+                        <h3>Trem 5</h3>
+                        <p>Status: <span class="status-text">Ativo</span></p>
+                        <p>Última atualização: 4 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card delayed">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 6" class="train-icon" />
+                    <div>
+                        <h3>Trem 6</h3>
+                        <p>Status: <span class="status-text">Atrasado</span></p>
+                        <p>Última atualização: 6 min atrás</p>
+                    </div>
+                </div>
+                <div class="status-card active">
+                    <img src="../download-removebg-preview (1).png" alt="Trem 7" class="train-icon" />
+                    <div>
+                        <h3>Trem 7</h3>
+                        <p>Status: <span class="status-text">Ativo</span></p>
+                        <p>Última atualização: 2 min atrás</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="schedule-section">
+                <h2>Horários</h2>
+                <ul class="schedule-list">
+                    <li>
+                        <span class="train-name">Trem 1</span>
+                        <span class="train-time">08:30</span>
+                        <span class="train-destination">São Paulo</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 2</span>
+                        <span class="train-time">09:15</span>
+                        <span class="train-destination">Rio de Janeiro</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 3</span>
+                        <span class="train-time">18:00</span>
+                        <span class="train-destination">Belo Horizonte</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 4</span>
+                        <span class="train-time">19:45</span>
+                        <span class="train-destination">Curitiba</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 5</span>
+                        <span class="train-time">20:30</span>
+                        <span class="train-destination">Porto Alegre</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 6</span>
+                        <span class="train-time">21:15</span>
+                        <span class="train-destination">Salvador</span>
+                    </li>
+                    <li>
+                        <span class="train-name">Trem 7</span>
+                        <span class="train-time">22:00</span>
+                        <span class="train-destination">Brasília</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="alerts-section">
+                <h2>Avisos e Alertas</h2>
+                <div class="alert-card">
+                    <img src="../186541647-alerta-notificação-ícone-de-aviso-belo-design-e-vetor-totalmente-editável-para-uso-comercial-removebg-preview.png" alt="Alerta" class="alert-icon" />
+                    <p>Alerta: Manutenção na linha 2 das 14h às 16h.</p>
+                </div>
+                <div class="alert-card">
+                    <img src="../sticker-png-internet-security-icon-alert-icon-warning-icon-red-triangle-sign-thumbnail-removebg-preview.png" alt="Alerta" class="alert-icon" />
+                    <p>Alerta: Trem 2 com atraso de 5 minutos.</p>
+                </div>
+                <div class="alert-card">
+                    <img src="../sticker-png-internet-security-icon-alert-icon-warning-icon-red-triangle-sign-thumbnail-removebg-preview.png" alt="Alerta" class="alert-icon" />
+                    <p>Alerta: Trem 4 com atraso de 3 minutos.</p>
+                </div>
+                <div class="alert-card">
+                    <img src="../sticker-png-internet-security-icon-alert-icon-warning-icon-red-triangle-sign-thumbnail-removebg-preview.png" alt="Alerta" class="alert-icon" />
+                    <p>Alerta: Trem 6 com atraso de 6 minutos.</p>
+                </div>
+            </section>
         </main>
-        <footer class="app-footer">
-            <p></p>
+        <footer>
+            <div class="rodape">
+                <a href="tela5.html">
+                    <img src="../dashboard.png">
+                </a>  
+    
+                <a href="tela9.html">
+                    <img src="../gestaoderotas.png">
+                </a>  
+    
+                <a href="tela11.html">
+                    <img src="../monitoramento.png">   
+                </a>   
+    
+                <a href="tela9.html">
+                    <img src="../relatorio.png">   
+                </a>  
+
+                <a href="tela9.html">
+                    <img src="../notificações.png">   
+                </a>  
+            </div>
         </footer>
     </div>
 </body>
-</html>
