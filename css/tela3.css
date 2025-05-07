@@ -80,3 +80,10 @@ button:hover {
     margin-bottom: 20px;
     color: #333;
 }
+
+.google-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
