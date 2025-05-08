@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,34 +31,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     transition: none;
-=======
-body, html {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.registro-container {
-    max-width: 400px;
-    width: 90%;
-    min-height: 100vh;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 2px solid #eb0b0b;
-    transition: box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
->>>>>>> 479712be728b07f492a3dd03cc8cf9f29f594f8b
 }
 
 .registro-container:hover {
