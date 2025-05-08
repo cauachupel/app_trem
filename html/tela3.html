@@ -2,30 +2,47 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Login - Gerenciamento de Trem</title>
     <link rel="stylesheet" href="../css/tela3.css" />
+    <style>
+        /* Additional mobile-first UX improvements */
+        body, html {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f9f9f9;
+        }
+        input, button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        button:focus, input:focus {
+            outline-offset: 2px;
+        }
+        form {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="registro-container">
+    <div class="registro-container" role="main" aria-label="Login form">
+       
         <h1>SSTREM</h1>
+        <img src="../trem1..png" alt="Ícone de Trem" style="display: block; margin: 0 auto 20px auto; width: 80px; height: auto;" />
         <h2>Bem vindo novamente! Faça seu login:</h2>
-        <form id="registroForm" action="#" method="POST">
+        <form id="registroForm" action="#" method="POST" autocomplete="on" novalidate>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required autocomplete="username" inputmode="text" aria-required="true" aria-label="Usuário" />
 
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required />
+            <input type="password" id="senha" name="senha" required autocomplete="current-password" aria-required="true" aria-label="Senha" />
 
-            <button type="submit">Login</button>
+            <button type="submit" aria-label="Login">Login</button>
         </form>
-        <div class="google-login">
-            <button id="googleLoginBtn" type="button">
-                <img src="../img/download-removebg-preview.png" alt="Google Icon" class="google-icon" />
-                Login com Google
-            </button>
-        </div>
+</div>
     </div>
 </body>
 </html>

@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -18,111 +18,170 @@ html, body {
     min-height: 480px;
 }
 
+@media (max-width: 480px) {
+    .registro-container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px 15px;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: flex-start;
+    }
+
+    .registro-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        border-bottom-width: 2px;
+    }
+
+    .registro-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    form label {
+        font-size: 1rem;
+        margin-top: 15px;
+        padding-left: 8px;
+        border-left-width: 4px;
+    }
+
+    form input {
+        font-size: 1rem;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 14px;
+        border-radius: 6px;
+    }
+
+    #googleLoginBtn {
+        font-size: 1rem;
+        padding: 10px 12px;
+        border-radius: 5px;
+    }
+
+    .google-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+}
+
 .registro-container {
     width: 100%;
     max-width: 480px;
     min-height: 100vh;
-    background-color: white;
-    padding: 20px;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .registro-container:hover {
-    box-shadow: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .registro-container h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #eb0b0b;
-    text-shadow: 1px 1px 2px #a30000;
-    border-bottom: 2px solid #eb0b0b;
-    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #d32f2f;
+    text-shadow: 1px 1px 3px rgba(211, 47, 47, 0.7);
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 12px;
+    font-weight: 700;
 }
 
 form label {
     display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #555;
-    border-left: 4px solid #ff0000;
-    padding-left: 8px;
-    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    border-left: 5px solid #d32f2f;
+    padding-left: 10px;
+    margin-top: 20px;
 }
 
 form input {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
     box-sizing: border-box;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
+    font-size: 15px;
 }
 
 form input:focus {
-    border-color: #ff0000;
+    border-color: #d32f2f;
     outline: none;
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.7);
 }
 
 button {
     width: 100%;
-    padding: 14px;
-    background-color: #ff0000;
-    border: 2px solid #b30000;
+    padding: 16px;
+    background-color: #d32f2f;
+    border: 2px solid #a52828;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(179, 0, 0, 0.5);
+    box-shadow: 0 5px 12px rgba(165, 40, 40, 0.5);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 button:hover {
-    background-color: #b30000;
-    box-shadow: 0 6px 12px rgba(179, 0, 0, 0.8);
+    background-color: #a52828;
+    box-shadow: 0 7px 16px rgba(165, 40, 40, 0.7);
 }
 
 .registro-container h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #222;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
-
 .google-login {
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
 }
 
 #googleLoginBtn {
     width: auto;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: normal;
-    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
     background-color: #4285f4;
     border: none;
     color: white;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.6);
+    box-shadow: 0 3px 6px rgba(66, 133, 244, 0.6);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #googleLoginBtn:hover {
     background-color: #357ae8;
-    box-shadow: 0 4px 8px rgba(53, 122, 232, 0.8);
+    box-shadow: 0 5px 10px rgba(53, 122, 232, 0.8);
 }
 
 .google-icon {
