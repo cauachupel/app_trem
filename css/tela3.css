@@ -127,8 +127,7 @@ button:hover {
     color: #333;
 }
 
-<<<<<<< HEAD
-/* Added styles to make Google login button smaller */
+
 .google-login {
     margin-top: 15px;
     text-align: center;
@@ -158,11 +157,5 @@ button:hover {
 .google-icon {
     width: 18px;
     height: 18px;
-=======
-.google-icon {
-    width: 20px;
-    height: auto;
-    vertical-align: middle;
->>>>>>> 479712be728b07f492a3dd03cc8cf9f29f594f8b
     margin-right: 8px;
 }
