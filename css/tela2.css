@@ -1,1 +1,116 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #b22222; /* Firebrick red */
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(178, 34, 34, 0.25);
+    border-radius: 16px;
+    max-width: 100%;
+    margin: 20px auto;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.train-icon {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 4px 4px rgba(178, 34, 34, 0.4));
+    transition: transform 0.3s ease;
+}
+
+.train-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #b22222;
+    text-shadow: 1px 1px 4px rgba(178, 34, 34, 0.5);
+    font-weight: 700;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 3px rgba(178, 34, 34, 0.15);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.btn {
+    padding: 18px 25px;
+    font-size: 1.2rem;
+    border: 2px solid #b22222;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #fff, #f9f9f9);
+    color: #b22222;
+    font-weight: 700;
+    box-shadow: 4px 4px 8px rgba(178, 34, 34, 0.15), -4px -4px 8px #fff;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.btn:hover {
+    background: #b22222;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(178, 34, 34, 0.6);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.login-btn {
+   
+}
+
+.register-btn {
+    
+}
+
+
+@media (min-width: 600px) {
+    .button-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn {
+        flex: 1;
+        max-width: 220px;
+    }
+}

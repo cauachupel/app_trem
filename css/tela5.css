@@ -1,8 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
+
+.fixed {
+    position: sticky;
+    top: 20px;
+}
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -10,20 +15,12 @@ body {
     color: #333;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 .dashboard-container {
-    background: #fff;
     width: 100%;
-    max-width: 480px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
 
 .dashboard-header {
@@ -36,6 +33,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+}
+
+.img foto1 {
+    width: 20%;
 }
 
 .dashboard-logo {
@@ -55,6 +56,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 section h2 {
@@ -79,7 +82,7 @@ section h2 {
     border: 2px solid #b22222;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .status-card.active {
@@ -125,7 +128,7 @@ section h2 {
     border-radius: 8px;
     padding: 0.75rem 1rem;
     font-weight: 600;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .train-name {
@@ -153,7 +156,7 @@ section h2 {
     border: 2px solid #b22222;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: #7f0000;
 }
 
@@ -185,6 +188,7 @@ section h2 {
 }
 
 .rodape img {
+    width: 20%;
     max-width: 30px;
     cursor: pointer;
 }
