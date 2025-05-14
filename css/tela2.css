@@ -1,17 +1,15 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 body, html {
     height: 100%;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #ffffff;
-    color: #b22222; /* Firebrick red */
+    color: #b22222; 
 }
 
 .container {
