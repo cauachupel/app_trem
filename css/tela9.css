@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -187,4 +187,12 @@ form button:hover {
 .notification-icon {
     width: 24px;
     height: 24px;
+}
+.map-section{
+    width: 90%;
+    max-width: 100%;
+}
+.map-image{
+    width: 90%;
+    max-width: 100%;
 }

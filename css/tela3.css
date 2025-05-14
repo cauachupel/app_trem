@@ -189,3 +189,21 @@ button:hover {
     height: 18px;
     margin-right: 8px;
 }
+
+body, html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f9f9f9;
+}
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+button:focus, input:focus {
+    outline-offset: 2px;
+}
+form {
+    width: 100%;
+}
