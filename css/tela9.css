@@ -1,7 +1,6 @@
 
 * {
-    margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
 }
 
@@ -9,10 +8,10 @@ body {
     font: 1rem Arial, sans-serif;
     background: #e6f0fa;
     color: #333;
-    padding: 1rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    width: 100%;
 }
 
 header {
@@ -45,7 +44,7 @@ header p {
 }
 
 main {
-    margin: 1rem auto 2rem;
+    
     background: #fff;
     padding: 1.5rem 2rem;
     border-radius: 15px;
@@ -194,5 +193,8 @@ form button:hover {
 }
 .map-image{
     width: 90%;
+    max-width: 100%;
+}
+html{
     max-width: 100%;
 }
