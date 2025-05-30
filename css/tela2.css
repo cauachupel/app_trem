@@ -10,6 +10,8 @@ body, html {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #ffffff;
     color: #b22222; 
+    max-width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -24,7 +26,7 @@ body, html {
     box-shadow: 0 0 20px rgba(178, 34, 34, 0.25);
     border-radius: 16px;
     max-width: 100%;
-    margin: 20px auto;
+
     width: 100%;
 }
 
@@ -109,6 +111,6 @@ header h1 {
     }
     .btn {
         flex: 1;
-        max-width: 220px;
+        max-width: 100%;
     }
 }
