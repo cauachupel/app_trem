@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monitoramento de Manutenção</title>
+    <link rel="stylesheet" href="../css/tela10.css" />
+</head>
+<body>
+    <header>
+        <h1>Monitoramento de Manutenção</h1>
+     
+    </header>
+    <main>
+        <section class="alerts">
+            <h2>Alertas Recentes</h2>
+            <ul>
+                <li class="alert critical">
+                    <img src="../alerta.png" alt="Alerta Crítico" />
+                    <div>
+                        <strong>Falha no sistema de freios</strong>
+                        <span>Locomotiva 12 - Inspeção urgente necessária</span>
+                        <time datetime="2024-06-01T08:30">07/05/2025 08:30</time>
+                    </div>
+                </li>
+                <li class="alert warning">
+                    <img src="../freio.png" alt="Alerta de Aviso" />
+                    <div>
+                        <strong>Manutenção preventiva agendada</strong>
+                        <span>Vagão 5 - Próxima inspeção em 3 dias</span>
+                        <time datetime="2024-06-04T09:00">7/05/2025 09:00</time>
+                    </div>
+                </li>
+                <li class="alert info">
+                    <img src="../trilho.webp" alt="Informação" />
+                    <div>
+                        <strong>Relatório de inspeção concluído</strong>
+                        <span>Setor de trilhos - Sem anomalias detectadas</span>
+                        <time datetime="2024-05-30T17:00">07/05/2025 17:00</time>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="inspections">
+            <h2>Inspeções Recentes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipamento</th>
+                        <th>Status</th>
+                        <th>Data</th>
+                        <th>Próxima Inspeção</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trem A</td>
+                        <td class="status critical">Crítico</td>
+                        <td>07/05/2025</td>
+                        <td>Imediata</td>
+                    </tr>
+                    <tr>
+                        <td>Trem F</td>
+                        <td class="status warning">Atenção</td>
+                        <td>07/05/2025</td>
+                        <td>29/06/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Setor de Trilhos</td>
+                        <td class="status ok">OK</td>
+                        <td>07/05/2025</td>
+                        <td>30/06/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 SNTREM</p>
+    </footer>
+</body>
+</html>
