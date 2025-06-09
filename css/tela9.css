@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.5;
+    padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 12px;
+    margin-top: 4px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border: 3px solid #d93025;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #ffe6e6;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 599px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+    header {
+        max-width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-color: #d93025;
+        background-color: #ffe6e6;
+    }
+    section h2 {
+        font-size: 1.2rem;
+    }
+    table th, table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #d93025;
+    margin-bottom: 0.3rem;
+    border-bottom: 3px solid #d93025;
+    padding-bottom: 0.3rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+section {
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    font-size: 1.4rem;
+    color: #d93025;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #ffd6d6;
+    color: #d93025;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+}
