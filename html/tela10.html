@@ -6,3 +6,58 @@
     <title>Alertas e notificações</title>
     <link rel="stylesheet" href="../css/tela10.css" />
 </head>
+<body>
+    <header class="header">
+        <h1>Alertas e Notificações</h1>
+    </header>
+    <main class="alerts-container">
+        <section class="alerts-filter">
+            <input type="text" id="filterInput" placeholder="Buscar alertas..." aria-label="Buscar alertas" />
+        </section>
+        <ul class="alerts-list">
+            <li class="alert-item delay">
+                <img src="../alerta.png" alt="Atraso" class="alert-icon" />
+                <div class="alert-content">
+                    <h2 class="alert-title">Atraso no trem 1234 <span class="badge urgent">Urgente</span></h2>
+                    <p class="alert-description">O trem está com atraso de 15 minutos devido a problemas na via férrea entre as estações A e B.</p>
+                    <time class="alert-time" datetime="2024-06-01T08:30">08:30 - 01/06/2024</time>
+                    <div class="alert-actions">
+                        <button class="btn btn-primary" aria-label="Ver detalhes do atraso no trem 1234">Ver detalhes</button>
+                        <button class="btn btn-secondary" aria-label="Confirmar alerta de atraso no trem 1234">Confirmar</button>
+                    </div>
+                </div>
+            </li>
+            <li class="alert-item mechanical-failure">
+                <img src="../freio.png" alt="Falha mecânica" class="alert-icon" />
+                <div class="alert-content">
+                    <h2 class="alert-title">Falha mecânica no trem 5678 <span class="badge pending">Pendente</span></h2>
+                    <p class="alert-description">Detectada falha no sistema de freios, manutenção urgente necessária para evitar riscos operacionais.</p>
+                    <time class="alert-time" datetime="2024-06-01T09:15">09:15 - 01/06/2024</time>
+                    <div class="alert-actions">
+                        <button class="btn btn-primary" aria-label="Ver detalhes da falha mecânica no trem 5678">Ver detalhes</button>
+                        <button class="btn btn-secondary" aria-label="Confirmar alerta de falha mecânica no trem 5678">Confirmar</button>
+                    </div>
+                </div>
+            </li>
+            <li class="alert-item safety-update">
+                <img src="../notificações.png" alt="Atualização de segurança" class="alert-icon" />
+                <div class="alert-content">
+                    <h2 class="alert-title">Atualização de segurança <span class="badge info">Informativo</span></h2>
+                    <p class="alert-description">Nova norma de segurança operacional implementada a partir de hoje, incluindo procedimentos para evacuação rápida.</p>
+                    <time class="alert-time" datetime="2024-06-01T10:00">10:00 - 01/06/2024</time>
+                    <div class="alert-actions">
+                        <button class="btn btn-primary" aria-label="Ver detalhes da atualização de segurança">Ver detalhes</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <button class="nav-btn active" aria-label="Tela de alertas e notificações">Alertas</button>
+            <button class="nav-btn" aria-label="Tela de monitoramento">Monitoramento</button>
+            <button class="nav-btn" aria-label="Tela de relatórios">Relatórios</button>
+        </nav>
+    </footer>
+</body>
+</html>
