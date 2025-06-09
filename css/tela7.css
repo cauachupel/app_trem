@@ -188,13 +188,53 @@ form button:hover {
     height: 24px;
 }
 .map-section{
-    width: 90%;
+    width: 100%;
     max-width: 100%;
 }
 .map-image{
-    width: 90%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
 }
 html{
     max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .route-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .route-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .map-image {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
 }

@@ -89,7 +89,7 @@ header p {
 
 .alerts h2 {
     font-size: 1.4rem;
-    color: #004d99;
+    color: #a30101;
     margin-bottom: 1rem;
 }
 
@@ -100,7 +100,7 @@ header p {
 .alert {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #faf8f8fd;
     border-radius: 8px;
     padding: 0.8rem;
     margin-bottom: 0.8rem;
@@ -146,7 +146,7 @@ header p {
 
 .inspections h2 {
     font-size: 1.4rem;
-    color: #004d99;
+    color: #990000;
     margin-bottom: 1rem;
 }
 
@@ -168,7 +168,7 @@ header p {
 
 .inspections th {
     background-color: #e8f0fe;
-    color: #004d99;
+    color: #990000;
     font-weight: 600;
 }
 
