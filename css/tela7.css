@@ -206,46 +206,44 @@ html{
 
 .container-navbar {
     display: flex;
-    position: relative;
-    top: 80px;
-    gap: 200px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 25vw;
-    margin-bottom: 10vh;
+    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+    justify-content: space-around; /* Distribui o espaço uniformemente */
+    gap: 1rem; /* Espaço entre os itens */
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
 }
 
+.container-navbar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* largura padrão do item */
+}
+
+.container-img-navbar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
 
 .container-img-navbar img {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    left: 50px;
+    width: 100%;
+    height: auto;
 }
-
-
 
 .container-navbar a {
     color: black;
     text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
 }
 
 
 
-/*estoque span*/
-
-#estoque {
-    position: relative;
-    right: 7px;
-}
-
-/*funcionarios span*/
-
-#funcionarios {
-    position: relative;
-    right: 20px;
-}
 
 
 @media (max-width: 768px) {
@@ -283,4 +281,14 @@ html{
         font-size: 1rem;
         padding: 0.75rem 1rem;
     }
+}
+.footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
 }

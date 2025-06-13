@@ -195,18 +195,78 @@ header p {
 }
 
 
-footer {
+.footer {
+    background-color: #8b0000;
+    color: white;
     text-align: center;
-    margin-top: 2rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container-navbar {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+    justify-content: space-around; /* Distribui o espaço uniformemente */
+    gap: 1rem; /* Espaço entre os itens */
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.container-navbar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* largura padrão do item */
+}
+
+.container-img-navbar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.container-img-navbar img {
+    width: 100%;
+    height: auto;
+}
+
+.container-navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
     font-size: 0.8rem;
-    color: #999;
+    display: block;
+    width: 100%;
 }
 
 
 @media (min-width: 600px) {
     body {
-        max-width: 480px;
+        max-width: 960px;
         margin: 0 auto;
         padding: 2rem;
+    }
+    main {
+        display: flex;
+        gap: 2rem;
+    }
+    .alerts, .inspections {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .alerts ul {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    .inspections table {
+        font-size: 1rem;
+    }
+    .inspections th, .inspections td {
+        padding: 1rem;
     }
 }
