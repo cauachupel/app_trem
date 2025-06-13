@@ -38,10 +38,10 @@ body {
 header {
     text-align: center;
     margin-bottom: 1.5rem;
-    border: 3px solid #d93025;
+    border: 3px solid #e0c9c7;
     padding: 1rem;
     border-radius: 12px;
-    background-color: #ffe6e6;
+    background-color: #e70909;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
@@ -55,8 +55,8 @@ header {
         max-width: 100%;
         padding: 0.8rem;
         margin-bottom: 1rem;
-        border-color: #d93025;
-        background-color: #ffe6e6;
+        border-color: #c7190d;
+        background-color: #cf1515;
     }
     section h2 {
         font-size: 1.2rem;
@@ -75,9 +75,9 @@ header {
 
 header h1 {
     font-size: 1.8rem;
-    color: #d93025;
+    color: #f3f2f2;
     margin-bottom: 0.3rem;
-    border-bottom: 3px solid #d93025;
+    border-bottom: 3px solid #ebebeb;
     padding-bottom: 0.3rem;
     letter-spacing: 1.2px;
     text-transform: uppercase;
@@ -118,6 +118,43 @@ th {
     color: #d93025;
     font-weight: 600;
 }
+.container-navbar {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+    justify-content: space-around; /* Distribui o espaço uniformemente */
+    gap: 1rem; /* Espaço entre os itens */
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.container-navbar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* largura padrão do item */
+}
+
+.container-img-navbar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.container-img-navbar img {
+    width: 100%;
+    height: auto;
+}
+
+.container-navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
+}
 
 .footer {
     background-color: #8b0000;
@@ -133,8 +170,28 @@ th {
 
 @media (min-width: 600px) {
     body {
-        max-width: 480px;
+        max-width: 960px;
         margin: 0 auto;
         padding: 2rem;
+    }
+    main {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    section {
+        flex: 1 1 300px;
+        max-width: 32%;
+        margin-bottom: 0;
+    }
+    table {
+        font-size: 1rem;
+    }
+    th, td {
+        padding: 1rem;
+    }
+    .container-navbar {
+        justify-content: center;
+        gap: 2rem;
     }
 }
