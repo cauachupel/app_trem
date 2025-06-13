@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gestão de Rotas - Planejamento e Ajuste</title>
     <link rel="stylesheet" href="../css/tela7.css" />
 </head>
+
 <body>
     <header>
         <div class="header-content">
-            <img src="../img/pngtree-train-icon-png-image_4316587-removebg-preview.png" alt="Ícone Trem" class="train-icon" />
+            <img src="../img/pngtree-train-icon-png-image_4316587-removebg-preview.png" alt="Ícone Trem"
+                class="train-icon" />
             <div>
                 <h1>Gestão de Rotas</h1>
                 <p>Planejamento e ajuste de trajetos</p>
@@ -57,23 +60,45 @@
                 <label for="adjustment">Descrição do ajuste:</label>
                 <textarea id="adjustment" name="adjustment" placeholder="Descreva o ajuste necessário..."></textarea>
 
-                <button type="submit"><img src="../img/google-maps-icon-Graphics-13989519-1-removebg-preview.png" alt="Icone Ajustar" class="button-icon" /> Enviar ajuste</button>
+                <button type="submit"><img src="../img/google-maps-icon-Graphics-13989519-1-removebg-preview.png"
+                        alt="Icone Ajustar" class="button-icon" /> Enviar ajuste</button>
             </form>
         </section>
 
         <section class="notifications">
             <h2>Notificações</h2>
             <div id="notifications-list">
-                <p><img src="../img/22013913-casa-icone-ilustracao-imagem-vetor-removebg-preview.png" alt="Ícone Notificação" class="notification-icon" /> Nenhuma notificação no momento.</p>
+                <p><img src="../img/22013913-casa-icone-ilustracao-imagem-vetor-removebg-preview.png"
+                        alt="Ícone Notificação" class="notification-icon" /> Nenhuma notificação no momento.</p>
             </div>
         </section>
     </main>
+    <!--navbar-->
 
+    <!--links dos icons https://www.flaticon.com/search?word=stock-->
+    <div class="container-navbar">
+        <div class="container-img-navbar">
+            <img src="../img/homebar.png" alt="">
+            <a href="../html/tela6.html"><span>Início</span></a>
+        </div>
+        <div class="container-img-navbar">
+            <img src="../img/menubar.png" alt="">
+            <a href="../"><span>Menu</span></a>
+        </div>
+        <div class="container-img-navbar">
+            <img src="../img/estoquebar.png" alt="">
+            <a href="../"><span id="estoque">Estoque</span></a>
+        </div>
+        <div class="container-img-navbar">
+            <img src="../img/funcionariosbar.png" alt="">
+            <a href="../"><span id="funcionarios">Funcionários</span></a>
+        </div>
+    </div>
     <script>
         const form = document.getElementById('adjust-route-form');
         const notificationsList = document.getElementById('notifications-list');
 
-        form.addEventListener('submit', function(event) {
+        form.addEventListener('submit', function (event) {
             event.preventDefault();
             const route = document.getElementById('route-select').value;
             const adjustment = document.getElementById('adjustment').value.trim();
@@ -92,4 +117,5 @@
         });
     </script>
 </body>
+
 </html>

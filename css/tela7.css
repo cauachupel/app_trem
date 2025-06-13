@@ -2,6 +2,7 @@
 * {
    
     box-sizing: border-box;
+    
 }
 
 body {
@@ -199,6 +200,51 @@ form button:hover {
 }
 html{
     max-width: 100%;
+}
+
+/*navbar*/
+
+.container-navbar {
+    display: flex;
+    position: relative;
+    top: 80px;
+    gap: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 25vw;
+    margin-bottom: 10vh;
+}
+
+
+.container-img-navbar img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 50px;
+}
+
+
+
+.container-navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/*estoque span*/
+
+#estoque {
+    position: relative;
+    right: 7px;
+}
+
+/*funcionarios span*/
+
+#funcionarios {
+    position: relative;
+    right: 20px;
 }
 
 
